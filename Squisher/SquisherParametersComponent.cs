@@ -8,7 +8,7 @@ namespace Squisher
 {
     public class SquisherParametersComponent : GH_Component
     {
-        public SquisherParametersComponent() : base("Squisher Parameters", "Squisher Parameters", "Parameters used to squish geometry. You can read more about these parameters here: https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_Geometry_SquishParameters.htm", "Mesh", "Squisher") { }
+        public SquisherParametersComponent() : base("Squisher Parameters", "Squisher Parameters", "Parameters used to squish geometry. You can read more about these parameters here: https://developer.rhino3d.com/api/RhinoCommon/html/T_Rhino_Geometry_SquishParameters.htm", "Transform", "Squisher") { }
         public override Guid ComponentGuid => new Guid("d2a8fd02-7959-4eaa-b614-71d497f4c93a");
         protected override System.Drawing.Bitmap Icon => Properties.Resources.SquishParametersIcon;
 

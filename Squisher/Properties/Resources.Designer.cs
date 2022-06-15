@@ -63,6 +63,16 @@ namespace Squisher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SquishBackIcon {
+            get {
+                object obj = ResourceManager.GetObject("SquishBackIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SquishIcon {
             get {
                 object obj = ResourceManager.GetObject("SquishIcon", resourceCulture);

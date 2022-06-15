@@ -9,7 +9,7 @@ namespace Squisher
 {
     public class SquisherComponent : GH_Component
     {
-        public SquisherComponent() : base("Squisher", "Squisher", "Description", "Mesh", "Squisher") { }
+        public SquisherComponent() : base("Squisher", "Squisher", "Description", "Transform", "Squisher") { }
         public override Guid ComponentGuid => new Guid("D154157F-F77C-4039-B39A-5C951D0A5CB3");
         protected override System.Drawing.Bitmap Icon => Properties.Resources.SquishIcon;
 
@@ -20,7 +20,7 @@ namespace Squisher
             pManager.AddGeometryParameter("Map", "M", "Geometry to map to the flattened geometry. Can be a point or curve.", GH_ParamAccess.list);
             pManager[1].Optional = true;
             pManager[2].Optional = true;
-            //pManager[2].DataMapping = GH_DataMapping.Flatten;
+            pManager[2].DataMapping = GH_DataMapping.Flatten;
         }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
