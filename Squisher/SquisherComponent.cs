@@ -9,7 +9,7 @@ namespace Squisher
 {
     public class SquisherComponent : GH_Component
     {
-        public SquisherComponent() : base("Squisher", "Squisher", "Description", "Transform", "Squisher") { }
+        public SquisherComponent() : base("Squisher", "Squisher", "It flattens a non-developable 3-D mesh or NURBS surface into a flat 2-D pattern.", "Transform", "Squisher") { }
         public override Guid ComponentGuid => new Guid("D154157F-F77C-4039-B39A-5C951D0A5CB3");
         protected override System.Drawing.Bitmap Icon => Properties.Resources.SquishIcon;
 
@@ -149,8 +149,6 @@ namespace Squisher
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Input geometry must be a mesh or a surface.");
                 return;
             }
-
         }
-
     }
 }
